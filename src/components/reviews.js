@@ -50,14 +50,14 @@ const Reviews = () => {
         
     }
     const carosol = () =>{setIndex((index)=>{
-        let nexIndex =0
+        
         console.log(index)
         if(index===data.length -1){
-            nexIndex =0
+            let nexIndex =0
             return nexIndex
         }
         else{
-            nexIndex = index+1
+            let nexIndex = index+1
             return nexIndex
         }
         
