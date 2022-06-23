@@ -12,9 +12,9 @@ import {
 
 
 
-const Reviews = (review) => {
+const Reviews = () => {
     const [index,setIndex]=useState(0)
-    const [readMore, setReadMore]=useState(true)
+    // const [readMore, setReadMore]=useState(true)
 
     // console.log(data[index])
     const {id,name,location,designation,avatar,message,lorem,rating}=data[index]
@@ -82,8 +82,9 @@ const Reviews = (review) => {
         
         
         
-       <p>{readMore? `${message}`:`${message}`+`${lorem}`}</p>
-       {console.log(readMore)}
+       {/* <p>{readMore? `${message}`:`${message}`+`${lorem}`}</p> */}
+       <p>{message}</p>
+       {/* {console.log(readMore)} */}
        {/* <button className="read-more"onClick={()=>{!readMore?setReadMore(true):setReadMore(false)}}>Read More</button> */}
         <h3 className='rating'>{rating}</h3>
         <div className="navigation">
