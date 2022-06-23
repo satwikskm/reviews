@@ -17,7 +17,8 @@ const Reviews = () => {
     // const [readMore, setReadMore]=useState(true)
 
     // console.log(data[index])
-    const {id,name,location,designation,avatar,message,lorem,rating}=data[index]
+    const {id,name,location,designation,avatar,message,rating}=data[index]
+    console.log(id)
     const RightNav=()=>{
         console.log("click")
         console.log(index)
