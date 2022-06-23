@@ -63,7 +63,7 @@ const Reviews = () => {
         
     })}
 
-    setInterval(()=>{carosol()},20000)
+    setInterval(()=>{carosol()},10000)
    
     
   return (
