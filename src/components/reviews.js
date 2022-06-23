@@ -1,6 +1,16 @@
 import React from 'react'
 import data from '../data'
 import { useState } from 'react'
+import './reviews.css'
+import { 
+    BsArrowRight,
+    BsArrowLeft,
+    BsBuilding,
+    BsFillChatLeftQuoteFill
+
+ } from 'react-icons/bs';
+
+
 
 const Reviews = (review) => {
     const [index,setIndex]=useState(0)
@@ -52,26 +62,36 @@ const Reviews = (review) => {
         
     })}
 
-    // setInterval(()=>{carosol()},10000)
+    setInterval(()=>{carosol()},20000)
    
     
   return (
       
-    <div>
+    <div className='card'>
+        
        
-        <h1>My Review</h1>
+        <span className="top-icon"><h1><BsFillChatLeftQuoteFill /></h1></span>
+        
         <img src={avatar} alt="" />
+        <div className="info">
         <h2>{name}</h2>
         <h3>{designation}</h3>
-        <h4>{location}</h4>
+        <h4><BsBuilding />{location}</h4>
+       
+        </div>
+        
         
         
        <p>{readMore? `${message}`:`${message}`+`${lorem}`}</p>
        {console.log(readMore)}
-       <button className="read-more"onClick={()=>{!readMore?setReadMore(true):setReadMore(false)}}>Read More</button>
-        <h1>{rating}</h1>
-        <button onClick={LeftNav}>Left</button>
-        <button onClick={RightNav}>Right</button>
+       {/* <button className="read-more"onClick={()=>{!readMore?setReadMore(true):setReadMore(false)}}>Read More</button> */}
+        <h3 className='rating'>{rating}</h3>
+        <div className="navigation">
+        <button className="button-nav" onClick={LeftNav}><BsArrowLeft /></button>
+        <button className="button-nav" onClick={RightNav}><BsArrowRight /></button>
+
+        </div>
+        
         
     </div>
   )

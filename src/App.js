@@ -4,7 +4,7 @@ import Reviews from './components/reviews';
 function App() {
   return (
     <div className="App">
-      <h1>Review</h1>
+      <h1>Reviews</h1>
       <Reviews  />
     </div>
   );

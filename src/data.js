@@ -40,7 +40,7 @@ const data = [
       "avatar": "https://testimonialapi.toolcarton.com/avatar/4.jpg",
       "message": "The company really helped with my personal branding - everything from conception to execution was amazing and super professional. Looking forwards for upgradation.",
       "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non fringilla leo. Phasellus dui erat, ultrices sollicitudin ante quis, convallis varius odio. Quisque sed tristique ante.",
-      "rating": 5,
+      "rating": 4.75,
       "audio": "https://testimonialapi.toolcarton.com/audio/4.mp3"
     },
     {
